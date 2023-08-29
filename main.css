@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+
+
+header .container {
+    padding: 25px;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+footer .container{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 0 7%;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header li{
+    margin-bottom: 15px;
+}
+
+
+
+.hr3 {
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, transparent,green, transparent);  
+}
+header li a,
+footer li a {
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+}
+header li a:hover,
+footer li a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(1, 1, 245);
+}
+
+
+
+section .container{
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    width: 100%;
+
+}
+h2, p {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+
+section{
+    padding: 48px 0;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4,24.25% );
+    column-gap: 1%;
+    row-gap: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+button {
+    display: block;
+    width: 80%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.container img {
+    width: 50%;
+}
+@media screen and (max-width: 640px){
+    section .container{
+        display: block;
+        padding: 15px;
+        width: 100%;
+    
+    }
+    .container img{
+        width: 100%;
+    }
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(1, 99% );       
+        row-gap: 0.2%;
+        justify-items: center;
+
+    }
+    section{
+        padding: 48px 0;
+    }
+
+    header .container a {
+        font-size: 25px;
+    }
+
+    header li a:hover,
+footer li a:hover{
+    text-decoration: none;
+}
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container img{
+        width: 100%;
+        border-color: green;
+        border-radius: 5px;
+
+    }
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2,48.5% );
+        column-gap: 1%;
+        row-gap: 1%;
+        padding-left: 1%;
+        padding-top: 1%;
+        justify-items: center;
+    }
+    section .container {
+        display: block;
+        padding: 15px;
+        width: 100%;
+    
+    }
+    header li a:hover,
+    footer li a:hover{
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
